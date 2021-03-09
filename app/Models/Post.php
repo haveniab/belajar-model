@@ -13,7 +13,7 @@ class Post extends Model
     {
         return Post::where('draft', false)
             ->orderBy('id', 'desc')
-            ->paginate(5);
+            ->paginate(10);
     }
 
     public static function getBySlug($slug)
